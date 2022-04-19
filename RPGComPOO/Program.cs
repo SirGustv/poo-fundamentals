@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace IntroducaoPOO
+namespace RPGComPOO
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Programação Orientada a Objetos...");
+            Console.WriteLine("Hello World!");
         }
     }
 }
