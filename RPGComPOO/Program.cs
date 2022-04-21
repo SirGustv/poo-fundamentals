@@ -1,4 +1,5 @@
 ﻿using System;
+using RPGComPOO.scr.Entities;
 
 namespace RPGComPOO
 {
@@ -6,7 +7,7 @@ namespace RPGComPOO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
