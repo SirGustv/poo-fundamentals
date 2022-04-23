@@ -16,6 +16,9 @@ namespace RPGComPOO.scr.Entities
         public int Level;
         public string TypePerson;
 
-        
+        public override string ToString()
+        {
+            return this.Name + " " + this.Level + " " + this.TypePerson;
+        }
     }
 }
