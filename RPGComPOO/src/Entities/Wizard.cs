@@ -11,5 +11,21 @@ namespace RPGComPOO.src.Entities
             this.HP = hP;
         }
         public Wizard() { }
+        public override string Attack()
+        {
+            return this.Name + " lançou magia de luz!";
+        }
+        public override string Attack(int bonus)
+        {
+            if (bonus > 6)
+            {
+                return "'Supernova' com bônus de " + bonus;
+            }
+            else
+            {
+                return "'Feixe de luz' com bônus de " + bonus;
+            }
+
+        }
     }
 }
