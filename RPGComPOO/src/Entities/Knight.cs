@@ -16,7 +16,7 @@ namespace RPGComPOO.src.Entities
         }
         public override string Attack()
         {
-            return this.Name + " Atacou com sua espada.";
+            return this.Name + " Atacou com sua espada!";
         }
         public override string Attack(int bonus)
         {

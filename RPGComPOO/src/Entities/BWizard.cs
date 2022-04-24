@@ -16,7 +16,7 @@ namespace RPGComPOO.src.Entities
         }
         public override string Attack()
         {
-            return this.Name + " lançou magia negra!";
+            return this.Name + " Lançou magia negra!";
         }
         public override string Attack(int bonus)
         {

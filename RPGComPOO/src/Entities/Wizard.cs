@@ -13,7 +13,7 @@ namespace RPGComPOO.src.Entities
         public Wizard() { }
         public override string Attack()
         {
-            return this.Name + " lançou magia de luz!";
+            return this.Name + " Lançou magia de luz!";
         }
         public override string Attack(int bonus)
         {
