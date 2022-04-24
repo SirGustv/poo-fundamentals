@@ -18,5 +18,17 @@ namespace RPGComPOO.src.Entities
         {
             return this.Name + " Atacou com sua espada.";
         }
+        public override string Attack(int bonus)
+        {
+            if (bonus > 6)
+            {
+                return "'Ataque pesado' com bônus de " + bonus;
+            }
+            else
+            {
+                return "'Ataque leve' com bônus de " + bonus;
+            }
+
+        }
     }
 }
