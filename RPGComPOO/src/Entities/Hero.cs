@@ -20,5 +20,9 @@ namespace RPGComPOO.scr.Entities
         {
             return this.Name + " " + this.Level + " " + this.TypePerson;
         }
+        public virtual string Attack()
+        {
+            return this.Name + " Atacou!";
+        }
     }
 }
