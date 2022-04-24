@@ -44,15 +44,37 @@ namespace RPGComPOO.src.Layout
         }
         public static void Heroes()
         {
-            Knight arus = new Knight("Arus", 29, "Knight", "489/500", "20/20");
-            Wizard jenica = new Wizard("Jenica", 30, "White Wizard", "180/200", "460/500");
+            Knight arus = new Knight("Arus", 29, "Knight", "469/749", "72/72");
+            Wizard jenica = new Wizard("Jenica", 30, "White Wizard", "325/601", "474/482");
+            BWizard topapa = new BWizard("Topapa", 47, "Black Wizard", "180/385", "611/641");
+            Ninja wedee = new Ninja("Wedee", 38, "Ninja", "292/574", "89/89");
 
             Console.WriteLine(arus);
             Console.WriteLine(" ------------------------------------");
             Console.WriteLine(" " + arus.Attack());
-            Console.WriteLine(" " + arus.Attack(4));
-            Console.WriteLine(" " + arus.Attack(9));
+            Console.WriteLine(" " + arus.Attack(2));
+            Console.WriteLine(" " + arus.Attack(10));
+            Console.WriteLine(" ====================================\n");
+
+            Console.WriteLine(jenica);
             Console.WriteLine(" ------------------------------------");
+            Console.WriteLine(" " + jenica.Attack());
+            Console.WriteLine(" " + jenica.Attack(3));
+            Console.WriteLine(" " + jenica.Attack(9));
+            Console.WriteLine(" ====================================\n");
+
+            Console.WriteLine(topapa);
+            Console.WriteLine(" ------------------------------------");
+            Console.WriteLine(" " + topapa.Attack());
+            Console.WriteLine(" " + topapa.Attack(1));
+            Console.WriteLine(" " + topapa.Attack(12));
+            Console.WriteLine(" ====================================\n");
+
+            Console.WriteLine(wedee);
+            Console.WriteLine(" ------------------------------------");
+            Console.WriteLine(" " + wedee.Attack());
+            Console.WriteLine(" " + wedee.Attack(1));
+            Console.WriteLine(" " + wedee.Attack(12));
         }
 
     }
