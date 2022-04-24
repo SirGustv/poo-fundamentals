@@ -1,9 +1,7 @@
-
-
 namespace RPGComPOO.src.Entities
 {
 
-    public class Person
+    public abstract class Person
     {
         public Person(string name, int level, string typePerson, string hP, string mP)
         {
@@ -24,11 +22,24 @@ namespace RPGComPOO.src.Entities
 
         public override string ToString()
         {
-            return this.Name + "\n Lv." + this.Level + " " + this.TypePerson + "\n HP " + this.HP + "\n MP " + this.MP;
+            return " " + this.Name + "\n  Lv." + this.Level + "  " + this.TypePerson + "\n  HP " + this.HP + "\n  MP " + this.MP;
         }
         public virtual string Attack()
         {
-            return this.Name + " Atacou!";
+            return this.Name + " atacou!";
+        }
+
+        public virtual string Attack(int bonus)
+        {
+            if (bonus > 6)
+            {
+                return "Ataque super efetivo com bônus de " + bonus;
+            }
+            else
+            {
+                return "Ataque não efetivo com bônus de " + bonus;
+            }
+
         }
     }
 }
