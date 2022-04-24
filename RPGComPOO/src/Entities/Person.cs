@@ -1,6 +1,6 @@
 
 
-namespace RPGComPOO.scr.Entities
+namespace RPGComPOO.src.Entities
 {
 
     public class Person
@@ -11,6 +11,7 @@ namespace RPGComPOO.scr.Entities
             this.Level = level;
             this.TypePerson = typePerson;
         }
+        public Person() { }
 
         public string Name;
         public int Level;
