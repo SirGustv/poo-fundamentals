@@ -1,20 +1,34 @@
 ## RPG COM ORIENTAÇÃO A OBJETOS ⚔️
 
+
+
 ### RESUMO
+
+---
 
 Recriação do projeto [RPG com Programação Orientada a Objetos](https://github.com/SirGustv/RPG_com_Orientacao_a_Objetos_Csharp) implementando conhecimentos atuais e com um melhor entendimento do que estou fazendo no código.
 
 ### DESCRIÇÃO
 
+---
+
 Programação Orientada a Objetos (POO) em C# com um desafio de projeto totalmente prático. Para isso, os pilares da orientação a objetos serão devidamente explorados no contexto de um jogo de RPG. Com isso, você poderá desenvolver sua capacidade de abstração com um problema real e implementar as evoluções que julgar necessárias.
 
-<center>![Demonstração de execução](poo-fundamentals\RPGComPOO\Img\RpgPOO.png)</center>
+#### DEMONSTRAÇÃO DE EXECUÇÃO
+
+---
+
+<center><img src="Img\RpgPOO.png">
 
 ### MELHORIAS
+
+---
 
 > -- Encapsular em método, repetições de código para deixar mais leve em questão de linhas de código.
 
 ### COMO USAR
+
+---
 
 Com `git clone`
 
