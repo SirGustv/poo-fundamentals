@@ -2,7 +2,7 @@
 
 ### RESUMO
 
-Recriação do projeto [RPG com Programação Orientada a Objetos][https://github.com/SirGustv/RPG_com_Orientacao_a_Objetos_Csharp] implementando conhecimentos atuais e com um melhor entendimento do que estou fazendo no código.
+Recriação do projeto [RPG com Programação Orientada a Objetos](https://github.com/SirGustv/RPG_com_Orientacao_a_Objetos_Csharp) implementando conhecimentos atuais e com um melhor entendimento do que estou fazendo no código.
 
 ### DESCRIÇÃO
 
