@@ -18,7 +18,7 @@ Programação Orientada a Objetos (POO) em C# com um desafio de projeto totalmen
 
 ---
 
-<center><img src="Img\RpgPOO.png">
+<center><img src="Img\RpgPOO.png"></center>
 
 ### MELHORIAS
 
