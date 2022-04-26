@@ -8,6 +8,8 @@ Recriação do projeto [RPG com Programação Orientada a Objetos](https://githu
 
 Programação Orientada a Objetos (POO) em C# com um desafio de projeto totalmente prático. Para isso, os pilares da orientação a objetos serão devidamente explorados no contexto de um jogo de RPG. Com isso, você poderá desenvolver sua capacidade de abstração com um problema real e implementar as evoluções que julgar necessárias.
 
+<center>![Demonstração de execução](poo-fundamentals\RPGComPOO\Img\RpgPOO.png)</center>
+
 ### MELHORIAS
 
 > -- Encapsular em método, repetições de código para deixar mais leve em questão de linhas de código.
