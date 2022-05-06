@@ -25,5 +25,15 @@ namespace AppCadastroSerie
             retorno += "Ano: " + this.Year;
             return retorno;
         }
+
+        public string returnTitle()
+        {
+            return this.Title;
+        }
+
+        public int returnId()
+        {
+            return this.Id;
+        }
     }
 }
