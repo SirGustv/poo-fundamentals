@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AppCadastroSerie.Layout
+namespace AppCadastroSerie.Interface
 {
     public interface iRepository<T>
     {
@@ -9,7 +9,6 @@ namespace AppCadastroSerie.Layout
         void Insert(T entity);
         void Exclude(int id);
         void Update(int id, T entity);
-
         int NextId();
     }
 }
