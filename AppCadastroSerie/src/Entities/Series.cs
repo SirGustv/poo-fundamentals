@@ -1,3 +1,5 @@
+using System;
+
 namespace AppCadastroSerie
 {
     public class Series : BaseEntity
@@ -19,9 +21,9 @@ namespace AppCadastroSerie
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Gênero: " + this.Genre + "\n";
-            retorno += "Tìtulo: " + this.Title + "\n";
-            retorno += "Descrição: " + this.Description + "\n";
+            retorno += "Gênero: " + this.Genre + Environment.NewLine;
+            retorno += "Tìtulo: " + this.Title + Environment.NewLine;
+            retorno += "Descrição: " + this.Description + Environment.NewLine;
             retorno += "Ano: " + this.Year;
             return retorno;
         }
