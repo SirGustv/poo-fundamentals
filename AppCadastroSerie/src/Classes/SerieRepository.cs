@@ -9,32 +9,32 @@ namespace AppCadastroSerie.Classes
         private List<Series> listSeries = new List<Series>();
         public void Exclude(int id)
         {
-            throw new NotImplementedException();
+            listSeries[id].Excluir();
         }
 
         public void Insert(Series entity)
         {
-            throw new NotImplementedException();
+            listSeries.Add(entity);
         }
 
         public List<Series> Lista()
         {
-            throw new NotImplementedException();
+            return listSeries;
         }
 
         public int NextId()
         {
-            throw new NotImplementedException();
+            return listSeries.Count;
         }
 
         public Series ReturnById(int id)
         {
-            throw new NotImplementedException();
+            return listSeries[id];
         }
 
         public void Update(int id, Series entity)
         {
-            throw new NotImplementedException();
+            listSeries[id] = entity;
         }
     }
 }
