@@ -8,6 +8,7 @@ namespace AppCadastroSerie
         private string Title { get; set; }
         private string Description { get; set; }
         private int Year { get; set; }
+        private bool Exclude { get; set; }
 
         public Series(int id, Genre genre, string title, string description, int year)
         {
@@ -16,6 +17,7 @@ namespace AppCadastroSerie
             this.Title = title;
             this.Description = description;
             this.Year = year;
+            this.Exclude = false;
         }
 
         public override string ToString()
@@ -36,6 +38,10 @@ namespace AppCadastroSerie
         public int returnId()
         {
             return this.Id;
+        }
+        public void Excluir()
+        {
+            this.Exclude = true;
         }
     }
 }
