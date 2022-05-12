@@ -6,7 +6,7 @@ namespace AppCadastroSerie
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cadastro de séries...");
+
         }
     }
 }
