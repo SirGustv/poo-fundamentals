@@ -1,4 +1,5 @@
 ﻿using System;
+using AppCadastroSerie.Menu;
 
 namespace AppCadastroSerie
 {
@@ -6,7 +7,7 @@ namespace AppCadastroSerie
     {
         static void Main(string[] args)
         {
-
+            UserMenu.CallMenu();
         }
     }
 }
