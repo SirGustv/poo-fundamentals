@@ -136,7 +136,9 @@ namespace AppCadastroSerie.Menu
             }
             foreach (var serie in lista)
             {
-                Console.WriteLine("#ID {0}: - {1} ", serie.returnId(), serie.returnTitle());
+                var exclude = serie.returnExclude();
+
+                Console.WriteLine("#ID {0}: - {1} - {2} ", serie.returnId(), serie.returnTitle(), (exclude ? "*Excluido*" : ""));
             }
             CallMenu();
         }
