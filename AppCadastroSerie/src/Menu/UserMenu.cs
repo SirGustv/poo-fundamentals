@@ -17,21 +17,49 @@ namespace AppCadastroSerie.Menu
                         ListSeries();
                         break;
                     case "2":
-                        InsertSeries();
+                        InsertSerie();
                         break;
                     case "3":
-                        UpdateSeries();
+                        UpdateSerie();
                         break;
-                        // case "4":
-                        //     break;
-                        // case "5":
-                        // ExcludeSerie();
-                        // break;
+                    case "4":
+                        ViewSeries();
+                        break;
+                    case "5":
+                        ExcludeSerie();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
                 }
+                userOption = GetUserOptions();
             }
+            Console.WriteLine("Obrigado por usar nosso serviço! Aperte qualquer tecla para sair.");
+            Console.ReadKey();
+
         }
 
-        private static void UpdateSeries()
+        private static void ViewSeries()
+        {
+            Console.WriteLine("\nDigite o ID da série a ser visualizada");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            var serie = repositorio.ReturnById(indiceSerie);
+            Console.WriteLine(serie);
+            CallMenu();
+        }
+
+        private static void ExcludeSerie()
+        {
+            Console.WriteLine("\nDigite o ID da série a ser excluida");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            repositorio.Exclude(indiceSerie);
+            CallMenu();
+        }
+        private static void UpdateSerie()
         {
             Console.WriteLine("Digite o ID da série a ser atualizada");
             int indiceSerie = int.Parse(Console.ReadLine());
@@ -41,7 +69,7 @@ namespace AppCadastroSerie.Menu
                 Console.WriteLine("{0} - {1}", i, Enum.GetName(typeof(Genre), i));
             }
 
-            Console.Write("Digite o gênero entre as opções acima: ");
+            Console.Write("\nDigite o gênero entre as opções acima: ");
             int entryGenre = int.Parse(Console.ReadLine());
 
             Console.Write("Digite o Título da Série: ");
@@ -64,7 +92,7 @@ namespace AppCadastroSerie.Menu
             CallMenu();
         }
 
-        private static void InsertSeries()
+        private static void InsertSerie()
         {
             Console.WriteLine("Insira uma nova série");
 
@@ -73,7 +101,7 @@ namespace AppCadastroSerie.Menu
                 Console.WriteLine("{0} - {1}", i, Enum.GetName(typeof(Genre), i));
             }
 
-            Console.Write("Digite o gênero entre as opções acima: ");
+            Console.Write("\nDigite o gênero entre as opções acima: ");
             int entryGenre = int.Parse(Console.ReadLine());
 
             Console.Write("Digite o Título da Série: ");
