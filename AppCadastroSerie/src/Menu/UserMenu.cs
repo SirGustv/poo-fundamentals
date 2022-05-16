@@ -19,8 +19,49 @@ namespace AppCadastroSerie.Menu
                     case "2":
                         InsertSeries();
                         break;
+                    case "3":
+                        UpdateSeries();
+                        break;
+                        // case "4":
+                        //     break;
+                        // case "5":
+                        // ExcludeSerie();
+                        // break;
                 }
             }
+        }
+
+        private static void UpdateSeries()
+        {
+            Console.WriteLine("Digite o ID da série a ser atualizada");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            foreach (int i in Enum.GetValues(typeof(Genre)))
+            {
+                Console.WriteLine("{0} - {1}", i, Enum.GetName(typeof(Genre), i));
+            }
+
+            Console.Write("Digite o gênero entre as opções acima: ");
+            int entryGenre = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Título da Série: ");
+            string entryTitle = Console.ReadLine();
+
+            Console.Write("Digite o Ano de Início da Série: ");
+            int entryYear = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a Descrição da Série: ");
+            string entryDescription = Console.ReadLine();
+
+            Series atualizaSerie = new Series(id: indiceSerie,
+                                        genre: (Genre)entryGenre,
+                                        title: entryTitle,
+                                        year: entryYear,
+                                        description: entryDescription);
+
+            repositorio.Update(indiceSerie, atualizaSerie);
+
+            CallMenu();
         }
 
         private static void InsertSeries()
@@ -51,6 +92,8 @@ namespace AppCadastroSerie.Menu
                                         description: entryDescription);
 
             repositorio.Insert(novaSerie);
+
+            CallMenu();
         }
 
         private static void ListSeries()
@@ -67,13 +110,12 @@ namespace AppCadastroSerie.Menu
             {
                 Console.WriteLine("#ID {0}: - {1} ", serie.returnId(), serie.returnTitle());
             }
-
+            CallMenu();
         }
 
         private static string GetUserOptions()
         {
-            Console.Clear();
-
+            Console.WriteLine();
             Console.WriteLine("Bem Vindo ao sistema de séries Code");
             Console.WriteLine("Informe a opção desejada:");
 
@@ -82,7 +124,8 @@ namespace AppCadastroSerie.Menu
             Console.WriteLine("3 - Atualizar série");
             Console.WriteLine("4 - Visualizar série");
             Console.WriteLine("5 - Excluir série");
-            Console.WriteLine("X - Sair");
+            Console.WriteLine("C - Limpar tela");
+            Console.WriteLine("X - Sair\n");
 
             string userOption = Console.ReadLine().ToUpper();
             Console.WriteLine();
