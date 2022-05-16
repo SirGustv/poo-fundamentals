@@ -40,6 +40,10 @@ namespace AppCadastroSerie
         {
             return this.Id;
         }
+        public bool returnExclude()
+        {
+            return this.Exclude;
+        }
         public void Excluir()
         {
             this.Exclude = true;
