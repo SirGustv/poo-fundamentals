@@ -27,6 +27,7 @@ namespace AppCadastroSerie
             retorno += "Tìtulo: " + this.Title + Environment.NewLine;
             retorno += "Descrição: " + this.Description + Environment.NewLine;
             retorno += "Ano: " + this.Year;
+            retorno += "Excluido: " + this.Exclude;
             return retorno;
         }
 
