@@ -11,7 +11,7 @@ Projeto com o intuito de consolidar aprendizado utilizando um dos paradigmas da 
 Este repositório irá conter dois projetos:
 
 - [RPG com POO](https://github.com/SirGustv/poo-fundamentals/tree/main/RPGComPOO) - Concluído;
-- [App de Cadastro de Séries](https://github.com/SirGustv/poo-fundamentals/tree/main/AppCadastroSerie) - Em andamento.
+- [App de Cadastro de Séries](https://github.com/SirGustv/poo-fundamentals/tree/main/AppCadastroSerie) - Concluído.
 
 Com a finalidade de entender e de como utilizar a Programação Orientada a Objetos (POO) e consolidar este conhecimento.
 
