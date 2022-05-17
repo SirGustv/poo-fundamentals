@@ -89,6 +89,10 @@ namespace AppCadastroSerie.Menu
 
             repositorio.Update(indiceSerie, atualizaSerie);
 
+            Console.Clear();
+
+            Console.WriteLine("Série atualizada!");
+
             CallMenu();
         }
 
@@ -121,6 +125,9 @@ namespace AppCadastroSerie.Menu
 
             repositorio.Insert(novaSerie);
 
+            Console.Clear();
+            Console.WriteLine("Série criada!");
+
             CallMenu();
         }
 
@@ -146,7 +153,7 @@ namespace AppCadastroSerie.Menu
         private static string GetUserOptions()
         {
             Console.WriteLine();
-            Console.WriteLine("Bem Vindo ao sistema de séries Code");
+            Console.WriteLine("Bem Vindo ao sistema SeriesFlix\n");
             Console.WriteLine("Informe a opção desejada:");
 
             Console.WriteLine("\n1 - Listar séries");

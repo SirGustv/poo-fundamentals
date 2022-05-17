@@ -7,6 +7,7 @@ namespace AppCadastroSerie
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             UserMenu.CallMenu();
         }
     }
