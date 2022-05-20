@@ -1,4 +1,4 @@
-## APP Cadastro de Séries
+## APP CADASTRO DE SÉRIES :tv:
 
 ### RESUMO
 
